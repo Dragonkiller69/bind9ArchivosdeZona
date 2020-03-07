@@ -1,0 +1,16 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	chilate.occ.ues.edu.sv cm16020.ues.edu.sv (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns1.chilate.occss.ues.edu.sv.
+@	IN	NS	ns2.chilate.occ.ues.edu.sv.
+1	IN	PTR	ns1.chilate.occ.ues.edu.sv.
+2	In	PTR	ns2.chilate.occ.ues.edu.sv.
+

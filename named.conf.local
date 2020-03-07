@@ -1,0 +1,16 @@
+ zone "chilate.occ.ues.edu.sv" { 
+     type master;
+     file "/etc/bind/db.chilate";
+     allow-transfer { 10.192.1.2; };
+ };
+ 
+zone "1.192.10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.10.192.1";
+    allow-transfer { 10.192.1.2; };
+};
+
+zone "8.b.d.0.1.0.0.2.ip6.arpa" {
+    type master;
+    file "/etc/bind/db.2001.db8.1";
+}; 
