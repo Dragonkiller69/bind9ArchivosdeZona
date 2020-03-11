@@ -1,0 +1,19 @@
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns1.chilaquila.occ.ues.edu.sv. cm16020.ues.edu.sv. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;      
+;     name servers
+@	IN	NS	ns1.chilaquila.occ.ues.edu.sv.
+@	IN	NS	ns2.chilaquila.occ.ues.edu.sv.
+ns1	IN	A	192.168.0.34
+ns2	IN	A	192.168
+
+www	IN	A	192.168.0.33
+ww	IN	CNAME	www
+@	IN	AAAA	2001:db8::1

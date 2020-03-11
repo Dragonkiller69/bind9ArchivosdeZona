@@ -15,7 +15,6 @@ $TTL	604800
 ns1	IN	A	192.168.0.2
 ns2	IN	A	10.192.1.2
 
-www	IN	A	192.168.0.33
-;www	IN	A	10.192.1.3
+www	IN	A	10.192.1.3
 ww	IN	CNAME	www
-@	IN	AAAA	2001:db8::1
+www	IN	AAAA	2001:db8:1::1
